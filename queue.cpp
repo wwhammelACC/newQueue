@@ -43,6 +43,16 @@ bool Queue::enqueue(int id, std::string *str) {
     bool flag = false;
     cout << "initial test line for enqueue aka PUSH " << endl;
     cout << endl;
+    //input validation
+    if(!isFull() && (id > 0) && (!str->empty())){
+        //allocate data structure
+        back = (back +1) % size;
+        queue[back] = new Data;
+        queue[back]->id = id;
+        queue[back]->information = *str;
+        count++;
+        flag = true;
+    }
     return flag;
 }
 
@@ -51,6 +61,14 @@ bool Queue::dequeue(Data *ref) {
     bool flag = false;
     cout << "initial test line for dequeue aka POP " << endl;
     cout << endl;
+    if(!isEmpty()){ // if not empty
+        // getting info from top of stack and putting it in data struct
+
+
+    }
+
+
+
     return flag;
 }
 
