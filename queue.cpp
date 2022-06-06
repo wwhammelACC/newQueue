@@ -63,12 +63,17 @@ bool Queue::dequeue(Data *ref) {
     cout << endl;
     if(!isEmpty()){ // if not empty
         // getting info from top of stack and putting it in data struct
-
-
+        ref->id = queue[front]->id;
+        ref->information = queue[front]->information;
+        delete queue[front];
+        front = (front+1) % size; //have to change front here to step through it
+        count--;
+        flag = true;
+    }else{
+        //fill passed data struct with -1, empty string
+        ref->id = -1;
+        ref->information = "";
     }
-
-
-
     return flag;
 }
 
