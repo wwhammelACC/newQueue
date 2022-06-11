@@ -1,6 +1,6 @@
 /*
- * Your comment header here
- * modify this file as needed to complete the assignment
+ * William Hammel
+ * Practice Queue
  */
 
 #ifndef QUEUE_H

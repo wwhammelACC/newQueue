@@ -1,14 +1,11 @@
 /*
- * Your comment header here
- * modify this file as needed to complete the assignment
+ * William Hammel
+ * Practice Queue
  */
 
 // each cpp includes ONLY it's header directly
 #include "queue.h"
 
-/*
- * write all your stack methods here
- */
 
 //Enqueue: Inserts a new element at the rear of the queue.
 //Dequeue: Removes the front element of the queue and returns it.

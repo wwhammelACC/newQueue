@@ -1,6 +1,6 @@
 /*
- * your header here
- * 
+ * William Hammel
+ * Practice Queue
  */
 
 #ifndef QUEUES_MAIN_H
