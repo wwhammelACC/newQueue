@@ -83,6 +83,17 @@ bool Queue::peek(Data *ref) {
     bool peek = false;
     cout << "initial test line for PEEK " << endl;
     cout << endl;
+    if(!isEmpty()){     // if not empty
+        //getting info from top of stack and putting it in data struct
+        ref->id = queue[front]->id;
+        ref->information = queue[front]->information;
+        //'return data to caller'
+        peek = true;
+    }else{
+        //fill passed data struct with -1, empty string
+        ref->id = -1;
+        ref->information = "";
+    }
     return peek;
 }
 // Utility function to check if the queue is empty or not
